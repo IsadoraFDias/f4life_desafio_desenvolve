@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>F4Life</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="logopng.png" alt="Logo da F4Life" class="cabecalho_imagem">
+
+        <nav class="cabecalho_navegacao">
+            <a href="#somos_nos" class="cabecalho_navegacao_item">Quem somos</a>
+            <a href="#acomodacoes" class="cabecalho_navegacao_item">Acomodações</a>
+            <a href="#experiencia" class="cabecalho_navegacao_item">Experiências</a>
+            <a href="#redes" class="cabecalho_navegacao_item">Redes Sociais</a>
+        </nav>
+    </header>
+
+    <main class="conteudo_principal">
+        <section class="pagina_principal">
+            <div>
+                <h1 class="titulo_principal">Nós encontramos seu lar doce lar.</h1>
+            </div>
+            <div>
+                <form id="formulario">
+
+                    <fieldset>
+                        <h2 class="titulo_formulario">Conte-nos sobre você</h2>
+                        <div class="dados_formulario">
+                            <label for="nome"><input type="name" name="Nome" id="nome" placeholder="Nome"
+                                    required></label>
+                        </div>
+                        <div class="dados_formulario">
+                            <label for="Telefone"><input type="fone" name="Telefone" id="fone" placeholder="Telefone"
+                                    required></label>
+                        </div>
+                        <div class="dados_formulario">
+                            <label for="Email"><input class="email" type="email" name="Email" placeholder="Email"
+                                    onblur="validarEmail()" onfocus="redefinirMsg()" required></label>
+                        </div>
+
+                        <span id="erro"></span>
+
+                        <div class="tipo_acomodacao">
+                            <label for="acomodacao">Tipo de acomodação:</label>
+                            <br>
+                            <label for="acomodacao">
+                                <input class="tipo_acomodacao" type="radio" name="acomodacao"
+                                    value="Casa/Apartamento inteiro" checked>Casa/Apartamento inteiro
+                            </label>
+                            <label for="acomodacao"><input class="tipo_acomodacao" type="radio" name="acomodacao"
+                                    value="quarto">Quarto</label>
+                            <label for="acomodacao"><input class="tipo_acomodacao" type="radio" name="acomodacao"
+                                    value="quarto_compartilhado">Quarto compartilhado</label>
+                        </div>
+                        <div class="dados_formulario">
+                            <label for="Descricao"><textarea name="descricao" id="descricao" cols="45" rows="10"
+                                    placeholder="Descreva suas necessidades"></textarea></label>
+                        </div>
+                        <div>
+                            <button type="submit" class="botao_formulario" onclick="enviarFormulario()">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section class="quem_somos">
+        <div class="imagem_quemSomos">
+            <a name="somos_nos"><img src="pexels-cottonbro-5146882.jpg" alt="Cozinha com amigos reunidos"></a>
+        </div>
+        <div class="descricao_quemSomos">
+            <h1 class="titulo_quemSomos">Quem somos</h1>
+            <h2>Somos uma empresa especializada em aluguéis de repúblicas para universitários.</h2>
+            <p> Realizamos anuncios, buscas, reformas e a preparação das moradias para recepção dos alunos em um
+                ambiente específico e otimizado para a vida de graduação.</p>
+        </div>
+    </section>
+    <main>
+        <h1 class="titulo_opcao_moradia"><a name="acomodacoes">Acomodações</a></h1>
+        <p class="paragrafo_opcao_moradia">Independente de qual seja a sua necessidade de espaço, nós temos uma solução
+        </p>
+
+        <section class="opcao_moradia">
+            <div class="card_moradia">
+                <h2>Casa/apartamento inteiro</h2>
+                <img src="lar.png" alt="vetor casa">
+                <p>Opção para quem quer levar sua galera junto</p>
+            </div>
+            <div class="card_moradia margem">
+                <h2>Quarto inteiro</h2>
+                <img src="cama.png" alt="vetor cama">
+                <p>Para quem quer um cantinho só seu</p>
+            </div>
+            <div class="card_moradia">
+                <h2>Quarto compartilhado</h2>
+                <img src="amigos.png" alt="vetor amigos">
+                <p>Para aqueles que querem mais economia e boa companhia</p>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="avaliacao">
+            <h1><a name="experiencia" class="titulo_avaliacao">Experiencias</a></h1>
+            <div class="card_avaliacao">
+                <img src="experiencia_Joao.png" alt="Cliente João" width="80%">
+                <h2>João Silva</h2>
+                <img src="avaliacao.png" alt="">
+                <p>Sou estudante, alugo um quarto compartilhado pela F4Life, super recomendo os serviços.</p>
+            </div>
+            <div class="card_avaliacao">
+                <img src="experiencia_Lara.png" alt="Cliente Lara" width="78%">
+                <h2>Lara Oliveira</h2>
+                <img src="avaliacao.png" alt="">
+                <p>Estou iniciando a faculdade, alugo o quarto inteiro, adorei a experiencia.</p>
+            </div>
+            <div class="card_avaliacao">
+                <img src="experiencia_Felipe.png" alt="Cliente Felipe" width="76%">
+                <h2>Felipe Martins</h2>
+                <img src="avaliacao.png" alt="">
+                <p>Um amigo indicou a F4Life, aluguei um ap inteiro e adorei todas as facillidades.</p>
+            </div>
+            <div class="card_avaliacao">
+                <img src="experiencia_Maria.png" alt="Cliente Maria" width="80%">
+                <h2>Maria R. Souza</h2>
+                <img src="avaliacao.png" alt="">
+                <p>Sou cliente F4Life desde o inicio da faculdade, me formo este semestre, são os melhores.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="roda_pe">
+        <h1 class="titulo_rodape"><a name="redes">Nos siga nas redes sociais</a></h1>
+        <section class="redes_sociais">
+            <div><a href="https://www.instagram.com/"><img src="instagram.png" alt="Logo do Instagram"
+                        class="icones_rede_social"></a></div>
+            <div><a href=""><img src="whatsapp.png" alt="Logo do Whatsapp" class="icones_rede_social"></a></div>
+            <div><a href="https://www.facebook.com/"><img src="facebook.png" alt="Logo do Facebook"
+                        class="icones_rede_social"></a></div>
+            <div><a href="https://twitter.com/i/flow/login"><img src="twitter.png" alt="Logo do Twitter"
+                        class="icones_rede_social"></a></div>
+        </section>
+        <img src="logopng.png" alt="Logo F4Life" class="logo_rodape">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

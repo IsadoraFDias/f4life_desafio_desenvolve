@@ -1,0 +1,255 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Barra de navegação*/
+body{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(19, 34, 53);   
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho_imagem{
+    height: 5vw;
+}
+
+.cabecalho_navegacao{
+    display: flex;
+    gap: 1.8vw;
+}
+
+.cabecalho_navegacao_item{
+    color: rgb(230, 110, 178);
+    font-size: 1.2vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+/*Primeira seção(principal) e formulario*/
+.conteudo_principal{
+    background-image: url(pagina_inicial.jpg);
+    background-repeat: no-repeat;
+    border-top: 2px solid rgb(167,204,253);
+    margin-bottom: 48px;
+}
+.pagina_principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-around;
+}
+.titulo_principal{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5vw;
+    color: rgb(255,255,255);
+    margin-top: -5%;
+    margin-left: -5%;
+}
+.titulo_formulario{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(19, 34, 53);
+    margin-left: 2%;
+    margin-bottom: 3%;
+    
+}
+span{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+fieldset{
+    margin-top: 12%;
+    margin-bottom: 14%;
+    margin-left: 10%;
+    border: 3.5px solid rgb(167,204,253);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 4%;
+}
+
+input:not(.tipo_acomodacao), textarea, button{
+    border-radius: 5px;
+    border: 2.5px solid rgb(167,204,253);
+    color: rgb(230, 110, 178);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 1%;
+    width:100%;
+    
+}
+
+.tipo_acomodacao{
+    color: rgb(19, 34, 53);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 2%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.dados_formulario{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;  
+}
+.botao_formulario{
+    background-color: rgb(19, 34, 53);
+    border: 2px solid rgb(19, 34, 53);
+    font-weight: 600;
+    font-size: x-large;
+}
+
+/*Segunda seção (Quem somos)*/
+.quem_somos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-around;
+    background-color: rgb(167,204,253);
+    margin-top: 0%;
+    margin-top: -3.2%;
+}
+
+.imagem_quemSomos{
+    width: 100%;
+    margin-left: 7%;
+}
+.titulo_quemSomos{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(19, 34, 53);
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 2.0vw;
+}
+.descricao_quemSomos{
+    color: rgb(19, 34, 53);
+    padding: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.descricao_quemSomos p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2vw 
+}
+
+/*Terceira seção (Opções de moradia)*/
+
+.opcao_moradia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.titulo_opcao_moradia{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(19, 34, 53);
+    text-align: center;
+    margin-top: 2%;
+}
+
+.paragrafo_opcao_moradia{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(19, 34, 53);
+    text-align: center;
+    margin-top: 1%;
+}
+
+.card_moradia{
+    border: 2px solid rgb(167,204,253);
+    border-radius: 10px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+}
+
+.card_moradia img{
+    width: 5vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.margem{
+    padding-top: 3vw;
+    padding-bottom: 4.5%;
+}
+
+.titulo_avaliação{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(19, 34, 53);
+    text-align: center;
+    margin-top: 2%;
+}
+
+.avaliacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+    background-color: rgb(167,204,253);
+    padding: 3%;
+}
+
+.card_avaliacao{
+    border: 2px solid rgb(255,255,255);
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 2%;
+    padding: 3%;
+    width: 100%;    
+    text-align: center;
+}
+.roda_pe{
+    background-color: rgb(19, 34, 53);  
+    border-top: 2px solid rgb(230, 110, 178);
+}
+.redes_sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.icones_rede_social{
+    width: 45%;
+}
+.titulo_rodape{
+    color: rgb(230, 110, 178);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 2%;
+}
+.logo_rodape{
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 480px) { /*responsividade*/
+.imagem_quemSomos{
+
+}
+
+}
