@@ -39,7 +39,7 @@ header{
 
 /*Primeira seção(principal) e formulario*/
 .conteudo_principal{
-    background-image: url(pagina_inicial.jpg);
+    background-image: url(imagens/pagina_inicial.jpg);
     background-repeat: no-repeat;
     border-top: 2px solid rgb(167,204,253);
     margin-bottom: 48px;
